@@ -1,4 +1,91 @@
 
   body {
     font-family: 'Quicksand', sans-serif;
+    color: black;
   }
+
+  h1 > span {
+    color: #bdbdbd;
+  }
+
+  .nav-link {
+    color: grey;
+  }
+
+  .nav-link:hover{
+    color: black;
+  }
+
+  .menu {
+    display: grid;
+    grid-column-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "nav nav nav"
+    "photo photo photo"
+    "handbag watch shoes";
+  }
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .menu > img {
+    grid-area: photo;
+  }
+
+  .handbag {
+    grid-area: handbag;
+    background-image: url(../images/handbag.jpg);
+  }
+
+  .watch {
+    grid-area: watch;
+    background-image: url(../images/watch.jpg);
+    background-position: center;
+  }
+
+  .shoes {
+    grid-area: shoes;
+    background-image: url(https://images.unsplash.com/photo-1510279503388-9d13cbd5356d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fG1lbiUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+  }
+
+  .menu .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .menu .nav-link:hover {
+    color: white;
+  }
+
+  .handbag, .watch, .shoes {
+    padding: 80px 20px 0px;
+    line-height: 0.8;
+    background-size: cover;
+  }
+
+  .handbag a, 
+  .watch a, 
+  .shoes  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .handbag a:hover,
+  .watch a:hover,
+  .shoes a:hover {
+    text-decoration: underline;
+  }
+
+  .catalog {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+
+
