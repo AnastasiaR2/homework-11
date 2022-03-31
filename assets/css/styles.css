@@ -47,7 +47,7 @@
 
   .shoes {
     grid-area: shoes;
-    background-image: url(https://images.unsplash.com/photo-1510279503388-9d13cbd5356d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fG1lbiUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(../images/shoes.jpg);
     background-position: center;
   }
 
@@ -85,6 +85,41 @@
     gap: 24px;
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .card {
+    border: none;
+  }
+
+  .card-text{
+    text-decoration: none;
+    color: black;
+  }
+
+  .card-text:hover{
+    text-decoration: underline;
+    color: black;
+  }
+
+  .card-body > button {
+    border: none;
+    background-color: #212529;
+    color: white;
+    padding: 10px 15px;
+  }
+
+  .card-body > button:hover {
+    background-color: #575757;
+  }
+
+  .info {
+    display: grid;
+    line-height: 0.7;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+
 
 
 
