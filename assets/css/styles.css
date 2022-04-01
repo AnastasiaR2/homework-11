@@ -26,7 +26,7 @@
     "handbag watch shoes";
   }
 
-  .nav {
+  .menu > .nav {
     grid-area: nav;
   }
 
@@ -117,6 +117,19 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  footer .nav-link {
+    padding-left: 0px;
+  }
+
+  footer {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer.copyright > p {
+    padding: 10px 0px 0px 8rem;
+  }
 
 
 
